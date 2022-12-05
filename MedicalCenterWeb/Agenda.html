@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Tu Cita | Medicalcenter</title>
+    <link rel="icon" type="image/jpg" href="img/icono6.jpg">
+    <link rel="stylesheet" href="css/pagina.css"/>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist\css\bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/formulario.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+   
+</head>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+           <div class="container-fluid" >
+            <a href="index.html" class="navbar-brand"><img src="img/icono6.jpg" width="64" height="64"> </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menunavegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menunavegacion" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-3">
+                <li class="nav-item"><a class="nav-link" href="login.html">Inicio</a> </li>
+                <li class="nav-item"><a class="nav-link" href="Paciente.html">Paciente</a> </li>
+                <li class="nav-item"><a class="nav-link" href="Agenda.html">Agenda</a> </li>
+                <li class="nav-item"><a class="nav-link" href="Receta.html">Recetas</a> </li>
+                <li class="nav-item"><a class="nav-link" href="Historia.html">Historia Clínica </a> </li>
+                <li class="nav-item"><a class="nav-link" href="Horario.html">Horario</a> </li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto </a> </li>
+
+
+               
+            </ul>
+            </div> 
+            </div>
+            </nav>
+</div>
+        <h1>Agenda tu cita </h1>
+        <br>
+        <div id="message-booking"></div>
+        <form method="POST" id="form_c_reservation">
+            <input type="hidden" name="_method" value="POST">						<input type="hidden" name="_token" value="YjpjEOCJCfm6ChjUVtB2zT6OZIehG3CL8p0h4JtU">						<input type="hidden" value="505" name="c_entity" id="c_entity">
+            <input type="hidden" value="medicos" name="c_username" id="c_username">
+
+            
+                        <label for="c_place">Lugar <i class="icon-spin6 animate-spin loading-availability d-none"></i></label>
+                        <select class="form-control" name="c_place" id="c_place">
+                                                                        <option value="1">Medicalcenter</option>
+                                                                </select>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <label for="c_date">Fecha <i class="icon-spin6 animate-spin loading-availability d-none"></i></label>
+                    <div class="form-group">
+                        <input type="date" class="form-control" name="c_date" id="c_date" value="2022-12-02">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-group">
+                        <label for="c_hour">Hora <i class="icon-spin6 animate-spin loading-availability d-none"></i></label>
+                        <select class="form-control" name="c_hour" id="c_hour">
+                                                                        <option value="07:00">07:00</option>
+                                                                        <option value="07:30">07:30</option>
+                                                                        <option value="08:00">08:00</option>
+                                                                        <option value="08:30">08:30</option>
+                                                                        <option value="09:00">09:00</option>
+                                                                        <option value="09:30">09:30</option>
+                                                                        <option value="10:00">10:00</option>
+                                                                        <option value="10:30">10:30</option>
+                                                                        <option value="11:00">11:00</option>
+                                                                        <option value="11:30">11:30</option>
+                                                                        <option value="12:00">12:00</option>
+                                                                        <option value="12:30">12:30</option>
+                                                                        <option value="13:00">13:00</option>
+                                                                        <option value="13:30">13:30</option>
+                                                                        <option value="14:00">14:00</option>
+                                                                        <option value="14:30">14:30</option>
+                                                                        <option value="15:00">15:00</option>
+                                                                        <option value="15:30">15:30</option>
+                                                                        <option value="16:00">16:00</option>
+                                                                        <option value="16:30">16:30</option>
+                                                                        <option value="17:00">17:00</option>
+                                                                        <option value="17:30">17:30</option>
+                                                                        <option value="18:00">18:00</option>
+                                                                        <option value="18:30">18:30</option>
+                                                                        <option value="19:00">19:00</option>
+                                                                        <option value="19:30">19:30</option>
+                                                                        <option value="20:00">20:00</option>
+                                                                        <option value="20:30">20:30</option>
+                                                                        <option value="21:00">21:00</option>
+                                                                        <option value="21:30">21:30</option>
+                                                                </select>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-group">
+                        <label for="c_name">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre" name="c_name" id="c_name">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-group">
+                        <label for="c_last_name">Apellido</label>
+                        <input type="text" class="form-control" placeholder="Apellido" name="c_last_name" id="c_last_name">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-group">
+                        <label class="d-block">Identificación</label>
+                        
+                        <input type="text" class="form-control" placeholder="C.I" name="c_document" id="c_document">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12 d-flex flex-column justify-content-end">
+                    <div class="form-group">
+                        <label for="c_gender">Género</label>
+                        <select class="form-control" name="c_gender" id="c_gender">
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-group">
+                        <label for="c_email">E-mail</label>
+                        <input type="email" class="form-control" placeholder="E-mail" name="c_email" id="c_email">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-group">
+                        <label for="c_email_confirm">Repetir E-mail</label>
+                        <input type="email" class="form-control" placeholder="Repetir E-mail" name="c_email_confirm" id="c_email_confirm" autocomplete="off">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-group">
+                        <label for="c_birthday">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" name="c_birthday" id="c_birthday">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-group">
+                        <label for="c_phone">Celular</label>
+                        <input type="text" class="form-control" placeholder="Celular" name="c_phone" id="c_phone">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12 d-flex flex-column justify-content-end">
+                    <div class="form-group">
+                        <label for="c_gender">especialidades</label>
+                        <select class="form-control" name="c_gender" id="c_gender">
+                            <option value="M">Medicina General</option>
+                            <option value="F">Pediatría</option>
+                            <option value="F">Cardiología</option>
+                            <option value="F">Endocrinología</option>
+                            <option value="F">Oftomología</option>
+                            <option value="F">Ginecología</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12">
+                    <div class="form-group">
+                        <label for="c_comment">Motivo de la consulta</label>
+                        <div class="input-group">
+                            <textarea name="c_comment" id="c_comment" class="contac_form_textarea" placeholder="Motivo de la consulta" rows="2"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+            <!-- /row -->
+            <div class="text-center submit-booking" style="position:relative;">
+                <input type="submit" class="btn btn-tertiary" value="Reservar ahora" id="submit_c_reservation">
+            </div>
+        </form>
+    </div>
+   
+</div>
+
+</div>
+
+</div>
+<br>
+
+<div class="container-boton">
+    <a href="https://api.whatsapp.com/send?phone=593978901761&text=Estoy%20interesado%20en%20" target="_blank">
+        <img class="boton" src="img/icono.png" alt="">
+    </a>
+    </div> 
+    
+
+<script src="bootstrap-5.0.2-dist\js\bootstrap.bundle.min.js"></script>
+</body>
+</html>

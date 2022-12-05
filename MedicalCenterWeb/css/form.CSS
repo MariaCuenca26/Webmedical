@@ -1,0 +1,55 @@
+body{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    
+}
+.contac{
+   width: 80%;
+   height: auto; 
+   margin: auto;
+   flex-wrap: wrap;
+   padding: 10px;
+   border-radius: 10px;
+   
+}
+ 
+.contac_info{
+    width: 100%;
+    height: auto;
+    flex:50%;
+}
+.contac_info h2{
+    margin-bottom: 10px;
+}
+.contac_form_txt{
+    width: 100%;
+    height: 40px; 
+    color: #000;
+    border: 1px solid #bcbcbc;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+}
+.contac_form_textarea{
+    width: 100%;
+    height: 130px; 
+    color: #000;
+    border: 1px solid #bcbcbc;
+    outline: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+
+}
+.btn[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #034eaf;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}

@@ -1,0 +1,23 @@
+body {
+    height: 800px;
+    background-image: url(../img/fondo.jpg);
+    background-size: 98%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+     }
+  .parrafo{
+    width: 1080px;
+    height: 600px;
+    background: rgba(26, 62, 68, 0.699);
+    color: #fff;
+    margin: 650px 80px 0 10px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  .conte{
+    position: relative;
+  }
